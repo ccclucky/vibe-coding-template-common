@@ -27,7 +27,12 @@
     *   让 AI 阅读 PRD 和 Tech Stack。
     *   提示词: *"创建一个详细的实施计划。步骤必须非常小且具体。每一步都必须包含验证测试。不要写代码，只写指令。专注于核心 MVP。*
     *   将结果保存到 `memory-bank/implementation-plan.md`。
-    *   **人工审查**: 仔细检查计划，确保步骤合理且逻辑清晰。
+
+4.  **查漏补缺 (Making sure everything is clear) —— *非常关键***
+    *   在开始写代码前，**必须**让 AI 审查你的计划。
+    *   提示词: *"Read all the documents in memory-bank, is implementation-plan.md clear? What are your questions to make it 100% clear for you?"*
+    *   AI 通常会问出几个关键问题。回答这些问题，并要求 AI 根据你的回答更新 `implementation-plan.md`。
+    *   这一步能极大地减少后续开发中的逻辑错误和返工。
 
 ### 第二步：进入 Vibe Coding 循环
 
